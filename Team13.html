@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Dash Board</title>
+    <link rel="stylesheet" href="SparkStreaming.css">
+    <script src="vue.js"></script>
+
+</head>
+<body>
+<div class="bar-container">
+    <div class="block" id="lenovo">
+        <div class="brand-name">联想</div>
+        <div class="bar" v-bind:style="style">
+            {{total}}
+        </div>
+    </div>
+
+    <div class="block" id="dell">
+        <div class="brand-name">戴尔</div>
+        <div class="bar" v-bind:style="style">
+            {{total}}
+        </div>
+    </div>
+
+    <div class="block" id="asus">
+        <div class="brand-name">华硕</div>
+        <div class="bar" v-bind:style="style">
+            {{total}}
+        </div>
+    </div>
+
+    <div class="block" id="hp">
+        <div class="brand-name">惠普</div>
+        <div class="bar" v-bind:style="style">
+            {{total}}
+        </div>
+    </div>
+
+    <div class="block" id="mi">
+        <div class="brand-name">小米</div>
+        <div class="bar" v-bind:style="style">
+            {{total}}
+        </div>
+    </div>
+
+    <div class="block" id="acer">
+        <div class="brand-name">宏碁</div>
+        <div class="bar" v-bind:style="style">
+            {{total}}
+        </div>
+    </div>
+
+    <div class="block" id="apple">
+        <div class="brand-name">苹果</div>
+        <div class="bar" v-bind:style="style">
+            {{total}}
+        </div>
+    </div>
+
+    <div class="block" id="huawei">
+        <div class="brand-name">华为</div>
+        <div class="bar" v-bind:style="style">
+            {{total}}
+        </div>
+    </div>
+
+    <div class="block" id="samsung">
+        <div class="brand-name">三星</div>
+        <div class="bar" v-bind:style="style">
+            {{total}}
+        </div>
+    </div>
+
+    <div class="block" id="hasee">
+        <div class="brand-name">神州</div>
+        <div class="bar" v-bind:style="style">
+            {{total}}
+        </div>
+    </div>
+
+    <div class="block" id="other">
+        <div class="brand-name">其他</div>
+        <div class="bar" v-bind:style="style">
+            {{total}}
+        </div>
+    </div>
+</div>
+
+<script>
+    var lenovo = new Vue({
+        el: "#lenovo",
+        data: {
+            total: "n/a",
+            style: {
+                backgroundColor: '#c33232'
+//                height: '20%'
+            }
+        }
+    });
+
+    var dell = new Vue({
+        el: "#dell",
+        data: {
+            total: "n/a",
+            style: {
+                backgroundColor: 'orange'
+            }
+        }
+    });
+
+    var asus = new Vue({
+        el: "#asus",
+        data: {
+            total: "n/a",
+            style: {
+                backgroundColor: 'darkolivegreen'
+            }
+        }
+    });
+
+    var hp = new Vue({
+        el: "#hp",
+        data: {
+            total: "n/a",
+            style: {
+                backgroundColor: 'darkorchid'
+            }
+        }
+    });
+
+    var mi = new Vue({
+        el: "#mi",
+        data: {
+            total: "n/a",
+            style: {
+                backgroundColor: 'darkorchid'
+            }
+        }
+    });
+
+    var acer = new Vue({
+        el: "#acer",
+        data: {
+            total: "n/a",
+            style: {
+                backgroundColor: 'crimson'
+            }
+        }
+    });
+
+    var apple = new Vue({
+        el: "#apple",
+        data: {
+            total: "n/a",
+            style: {
+                backgroundColor: 'darkorchid'
+            }
+        }
+    });
+
+    var huawei = new Vue({
+        el: "#huawei",
+        data: {
+            total: "n/a",
+            style: {
+                backgroundColor: 'forestgreen'
+            }
+        }
+    });
+
+    var samsung = new Vue({
+        el: "#samsung",
+        data: {
+            total: "n/a",
+            style: {
+                backgroundColor: 'darkslateblue'
+            }
+        }
+    });
+
+    var hasee = new Vue({
+        el: "#hasee",
+        data: {
+            total: "n/a",
+            style: {
+                backgroundColor: 'lightcoral'
+            }
+        }
+    });
+
+    var other = new Vue({
+        el: "#other",
+        data: {
+            total: "n/a",
+            style: {
+                backgroundColor: '#45a0bf'
+            }
+        }
+    });
+
+    var brandEles = [lenovo, dell, asus, hp, mi, acer, apple, huawei, samsung, hasee, other];
+</script>
+<script src="reconnecting-websocket.js"></script>
+<script src="UIController.js"></script>
+
+</body>
+</html>
